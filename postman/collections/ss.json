@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "390fe000-0644-4c1a-bcba-c91c24e707ba",
+		"name": "ss",
+		"description": "Add your service description here\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "869575-390fe000-0644-4c1a-bcba-c91c24e707ba"
+	},
+	"item": [
+		{
+			"name": "GetLastTradePrice",
+			"id": "b728f558-351c-4e17-933a-4a0c1d1fb5ba",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml; charset=utf-8"
+					},
+					{
+						"key": "SOAPAction",
+						"value": "http://example.com/GetLastTradePrice"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <TradePriceRequest xmlns=\"http://example.com/stockquote.xsd\">\n      <tickerSymbol>string</tickerSymbol>\n    </TradePriceRequest>\n  </soap:Body>\n</soap:Envelope>\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{StockQuotePortBaseUrl}}/stockquote",
+					"host": [
+						"{{StockQuotePortBaseUrl}}"
+					],
+					"path": [
+						"stockquote"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "c0489bbb-1aeb-439b-87aa-cf4397b6720b",
+					"name": "GetLastTradePrice response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml; charset=utf-8"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "http://example.com/GetLastTradePrice"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <TradePriceRequest xmlns=\"http://example.com/stockquote.xsd\">\n      <tickerSymbol>string</tickerSymbol>\n    </TradePriceRequest>\n  </soap:Body>\n</soap:Envelope>\n",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://example.com/stockquote",
+							"protocol": "http",
+							"host": [
+								"example",
+								"com"
+							],
+							"path": [
+								"stockquote"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/xml; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <TradePrice xmlns=\"http://example.com/stockquote.xsd\">\n      <price>89</price>\n    </TradePrice>\n  </soap:Body>\n</soap:Envelope>\n"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"id": "4d871dc9-84a2-4bde-8cbc-7951b89c8fa9",
+			"key": "StockQuotePortBaseUrl",
+			"value": "http://example.com",
+			"type": "any"
+		}
+	]
+}
