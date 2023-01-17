@@ -11,8 +11,6 @@ files[] = {"id":"869575-390fe000-0644-4c1a-bcba-c91c24e707ba","path":"ss.json","
 
 [relations.apiDefinition]
 rootDirectory = postman/schemas
-files[] = {"path":"wsdl1_1.wsdl","metaData":{}}
 
 [relations.apiDefinition.metaData]
 type = wsdl:1
-rootFiles[] = wsdl1_1.wsdl
