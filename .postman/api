@@ -10,8 +10,8 @@ rootDirectory = postman/collections
 
 [relations.apiDefinition]
 rootDirectory = postman/schemas
-files[] = {"path":"dewfcrefdcrefgrwgverfvcfgrefgvcerfvcrwfvcerfvwfvcefvtgvedfvgfvefvtevarefverfvgtrbvtefgvtwvertfindex.yaml","metaData":{}}
+files[] = {"path":"adswdswd dwdewdewdededederwftrhg56tg5trhyhyghbyrhby5erwghybyrgindex.raml","metaData":{}}
 
 [relations.apiDefinition.metaData]
-type = openapi:3
-rootFiles[] = dewfcrefdcrefgrwgverfvcfgrefgvcerfvcrwfvcerfvwfvcefvtgvedfvgfvefvtevarefverfvgtrbvtefgvtwvertfindex.yaml
+type = raml:1
+rootFiles[] = adswdswd dwdewdewdededederwftrhg56tg5trhyhyghbyrhby5erwghybyrgindex.raml
